@@ -129,7 +129,7 @@ nav a {
   text-align: center;
 
   border: 1px solid black;
-  
+
 }
 
 nav a:hover {
@@ -215,7 +215,6 @@ footer {
   max-height: 15%;
   min-height: 15rem;
 
-  /* Flex Properties */
   display: flex;
   margin-top: auto;
   justify-content: center;
