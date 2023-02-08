@@ -24,10 +24,11 @@ In this challenge you will refactor your personal portfolio code to make it resp
 
 New features of a project should occur in a new branch in the same repository. Follow these steps to set up and work on your repo from Wednesday:
 
-- [ ] DO NOT FORK OR CLONE THIS REPOSITORY; YOU WILL WORK OUT OF YESTERDAY'S AGAIN.
-- [ ] cd into your repository on the command line and use code . to open VS Code.
-- [ ] Create a branch called `firstName-lastName-responsive`.
+- [x] DO NOT FORK OR CLONE THIS REPOSITORY; YOU WILL WORK OUT OF YESTERDAY'S AGAIN.
+- [x] cd into your repository on the command line and use code . to open VS Code.
+- [x] Create a branch called `firstName-lastName-responsive`.
 - [ ] Make an initial push after you complete your HTML structure, then make a Pull Request onto the main branch of *YOUR* repository (not BloomTech's).
+      ==> `git push --set-upstream origin firstName-lastName-responsive`
 - [ ] Go into Canvas and connect your repository by copy-pasting its Pull Request URL into the submission slot.
 - [ ] Download the Live Server extension from the Extensions tab on the left side of your VS Code. After it is done installing, click "Go Live" on the bottom right side of your screen to run your HTML file.
 - [ ] Complete your work making regular commits to the `firstName-lastName-responsive` branch; your submitted URL will always reflect your most recent work.
