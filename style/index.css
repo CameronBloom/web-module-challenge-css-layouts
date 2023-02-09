@@ -226,17 +226,107 @@ footer {
 /* default (smallest allowable screen) */
 
 
-/* if screen width is greater than or equal to 360px... */
-@query (min-width: 360px) {
+/* if screen width is greater than or equal to 500px... */
+@media (min-width: 500px) {
+
+  button:hover {
+    border: yellow solid 1px;
+    z-index: 1;
+  }
+  
+  .top-section img {
+    border: solid yellow 1px;
+  }
+
+  .portfolio-element img {
+    border: solid yellow 1px;
+  }
+  footer {
+    border-top: 1px solid yellow;
+  }
 
 }
 
-/* if screen width is greater than or equal to 1366px... */
-@query (min-width: 1366px) {
+/* if screen width is greater than or equal to 800px... */
+@media (min-width: 800px) {
+  header {
+    align-items: flex-start;
+    align-content: center;
+    background-color: lightgray;
+    padding: 2% 10%;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+    border: red solid 1px;
+    z-index: 1;
+  }
+  
+
+  .btn-nth {
+    margin-top: 0px;
+    margin-left: -1px;
+  }
+
+  .top-section {
+    flex-direction: row;
+  }
+  
+  .top-section img {
+    border: solid red 1px;
+  }
+
+  .description {
+    align-items: flex-start;
+    padding: 2% 5%;
+  }
+
+  .description p {
+    text-align: left;
+    font-size: 1.6rem;
+  }
+
+  .projects {
+  
+    /* flexbox properties */
+    flex-direction: column;
+    gap: 4rem;
+    
+  }
+  
+  .wrapper {  
+    /* flexbox properties */
+    flex-direction: row;
+  }
+  
+  .portfolio-element {
+    /* formatting properties */
+    text-align: center;
+   
+    /* flexbox properties */
+    flex-direction: column;
+  }
+  
+  .portfolio-element img {
+    border: solid red 1px;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  footer {
+    /* formatting properties */
+    padding: 3% 6%;
+    border-top: 1px solid red;
+  }
 
 }
 
-/* if screen width is greater than or equal to 1920px... */
-@query (min-width: 1920px) {
-
-}
