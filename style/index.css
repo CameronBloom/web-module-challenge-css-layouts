@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -76,177 +77,166 @@ body {
   font-family: 'RobotoMono', monospace;
 }
 
-h1, h2 {
-  font-size: 6rem;
+h1 {
+  font-size: 4.8rem;
+  font-weight: bold;
 }
 
-.container {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
-.header-container {
-  width: 100%;
-  height: 45%;
-  max-height: 45%;
-  min-height: 45rem;
+header {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 2rem;
-
-}
-
-.header-container p {
-  width: 60%;
+  gap: 0rem;
+  padding: 2% 0;
 }
 
 nav {
-  width: 100%;
-
-  /* Flex Properties */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
 
-nav a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  color: black;
+button {
   background-color: white;
-
-  width: 150px;
-  height: 60px;
-  
-  text-decoration: none;
-  text-align: center;
-
-  border: 1px solid black;
-
+  color: black;
+  border: black solid 1px;
+  padding: 5px 15px;
+  width: 12rem;
+  height: 3rem;
 }
 
-nav a:hover {
-  color: white;
+button:hover {
   background-color: black;
-
-  cursor: pointer;
+  color: white;
+  border: blue solid 1px;
 }
 
-
-.banner-container {
-  width: 100%;
-  height: 35%;
-  max-height: 35%;
-  min-height: 35rem;
-  
-  background-image: url("../assets/field.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
+button a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.6rem;
 }
 
-.projects-container {
-  width: 100%;
-  height: 100%;
-  min-height: 35rem;
-  
-  padding: 1% 0;
+.btn-nth {
+  margin-top: -1px;
+}
 
-  /* Flex Properties */
+.top-section, .description {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+  padding: 2% 10%;
+}
+
+.top-section img {
+  border: solid blue 1px;
+}
+
+.description p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.projects {
+  /* formatting properties */
+  text-align: center;
+  padding: 5% 10%;
+  
+
+  /* flexbox properties */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  gap: 2rem;
-}
-
-.project {
-  width: 20%;
-  height: 400px;
-  background-color: lightyellow;
-
-}
-
-.project img {
-  height: 100%;
-  width: 100%;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-positoin: top center;
-}
-
-.description {
-  width: 30%;
-  height: 400px;
-  background-color: lightgreen;
+  gap: 10%;
   
 }
 
-.description p {
-  width: 100%;
-  height: 100%;
-  padding: 10%;
+.wrapper {
+  /* formatting properties */
+  text-align: center;
 
-  text-align: justify;
-  
-  overflow: auto;
-
+  /* flexbox properties */
   display: flex;
-  justify-content: center;
-  align-items: justify;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 3rem;
 
+}
+
+.portfolio-element {
+  /* formatting properties */
+  text-align: center;
+ 
+  /* flexbox properties */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.portfolio-element img {
+  text-align: center;
+  border: solid blue 1px;
+}
+
+.portfolio-element p {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
-  width: 100%;
-  
-  height: 15%;
-  max-height: 15%;
-  min-height: 15rem;
-
-  display: flex;
-  margin-top: auto;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid black;
-}
-
-
-footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  color: black;
-  background-color: white;
-  
-
-  width: 150px;
-  height: 60px;
-  
-  margin: 0 auto;
-  
-  text-decoration: none;
+  /* formatting properties */
+  background-color: lightgray;
   text-align: center;
+  padding: 5% 10%;
+  border-top: 1px solid blue;
 
-  border: 1px solid black;
+  /* flexbox properties */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+
+/* default (smallest allowable screen) */
+
+
+/* if screen width is greater than or equal to 360px... */
+@query (min-width: 360px) {
 
 }
 
-footer a:hover {
-  color: white;
-  background-color: black;
+/* if screen width is greater than or equal to 1366px... */
+@query (min-width: 1366px) {
 
-  cursor: pointer;
+}
+
+/* if screen width is greater than or equal to 1920px... */
+@query (min-width: 1920px) {
+
 }
